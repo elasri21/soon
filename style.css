@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html,
+body,
+#container {
+  height: 100%;
+  background-color: hsl(0, 0%, 90%);
+}
+body {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+#container {
+  max-width: 1440px;
+}
+@media screen and (max-width: 375px) {
+  #container {
+    max-width: 375px;
+    height: auto;
+  }
+}
+#container #page {
+  width: 860px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: hsl(0, 0%, 100%);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 375px) {
+  #container #page {
+    max-width: 375px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: auto;
+  }
+}
+#container #page .logo {
+  margin-bottom: 30px;
+}
+#container #page #form h1 {
+  font-size: 120%;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 10px;
+}
+#container #page #form h1 span {
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+}
+#container #page #form p {
+  font-size: 70%;
+  font-weight: 600;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 10px;
+}
+#container #page #form .field {
+  margin-bottom: 40px;
+}
+#container #page #form .field input {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px 10px;
+  font-size: 60%;
+  font-weight: 400;
+}
+@media screen and (max-width: 375px) {
+  #container #page #form .field input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+#container #page #form .field input#email {
+  border: 1px solid hsl(0, 0%, 59%);
+  width: 230px;
+}
+#container #page #form .field .error-mobile,
+#container #page #form .field .error-desktop {
+  display: none;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  font-size: 60%;
+  color: hsl(354, 100%, 66%);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 375px) {
+  #container #page #form .field input#email {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+}
+#container #page #form .field input#submit {
+  background-color: hsl(223, 87%, 63%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  text-transform: capitalize;
+  width: 100px;
+  cursor: pointer;
+}
+@media screen and (max-width: 375px) {
+  #container #page #form .field input#submit {
+    width: 80%;
+  }
+}
+
+#container #page #form .field input#submit:hover {
+  box-shadow: 6px 0.5em 0.5em hsl(223, 100%, 88%),
+    6px -0.5em 0.5em hsl(223, 100%, 88%), -6px 0.5em 0.5em hsl(223, 100%, 88%),
+    -6px -0.5em 0.5em hsl(223, 100%, 88%);
+}
+#container #page .image {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 375px) {
+  #container #page .image {
+    width: 100%;
+  }
+}
+#container #page .image img {
+  width: 100%;
+}
+#container #page #footer .social {
+  text-align: center;
+}
+#container #page #footer .social a {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 50%;
+  text-align: center;
+  border: 0.5px solid hsl(223, 100%, 88%);
+  border-radius: 50%;
+  padding: 7px;
+}
+#container #page #footer .social a:last-child {
+  margin-right: 0;
+}
+#container #page #footer .social a i {
+  display: block;
+  color: hsl(223, 87%, 63%);
+}
+#container #page #footer .social a:hover {
+  background-color: hsl(223, 87%, 63%);
+  /* color: hsl(0, 0%, 100%); */
+}
+#container #page #footer .social a:hover i {
+  color: hsl(0, 0%, 100%);
+}
+#container #page #footer .copy-right {
+  margin-top: 20px;
+}
+#container #page #footer .copy-right p {
+  font-size: 60%;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+
+/*
+    i got topoint where i have to fix mobile screen
+*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
